@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Recipes.h"
 
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-
+@property (strong, nonatomic) Recipes* myRecipes;
 
 @end
 
