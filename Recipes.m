@@ -15,7 +15,7 @@
     self = [super init];
     if (self) {
         
-        // populate model object with data
+        // populate model object with initial data
         _recipes = @[@"Eggs", @"Hamburgers", @"Pasta", @"Hipster Coffee", @"Salmon"];
     }
     return self;
