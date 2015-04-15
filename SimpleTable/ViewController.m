@@ -43,9 +43,14 @@
     [recipes removeObjectAtIndex:indexPath.row];
     
     // requiest the table view to reload so we can see the data after it was deleted
-    [tableView reloadData];
+//    [tableView reloadData];
+
+    // refactored the reloading the data to just animate the deletion of the row
+    [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     
 }
+
+
 
 
 - (void)viewDidLoad {
